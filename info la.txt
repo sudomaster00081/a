@@ -1,0 +1,106 @@
+
+LAROUTE 0001 By AJ
+
+
+
+
+pip install virtualenvwrapper-win
+
+mkvirtualenv la
+
+pip install django  
+
+django-admin --version 
+
+mkdir la1  
+
+cd la1
+
+django-admin startproject laroute0001
+
+cd laroute0001  
+
+python manage.py runserver
+
+python manage.py startapp user
+
+
+
+#create urls.py in user folder
+#type
+from django.urls import path
+from . import views
+urlpatterns = [
+    path(' ', views.home, name='home')
+]
+#into it
+
+#goto views.py
+from django.http import HttpResponse
+def home(request):
+    return render(request, 'home.html')
+
+
+#goto laroute0001 urls.py add
+from django.urls import path,include
+path('', include('user.urls')),
+
+
+#create a folder in laroute0001 exam named templates
+#create an file named Homepage.html
+#goto main settings add dir of template
+# os.path.join(BASE_DIR, 'templates')
+# import os
+
+#install pgadmin
+pip install psycopg2
+
+pip install pillow
+
+#add css files
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+#create static folder in laroute0001 
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% load static %}
+#in base.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

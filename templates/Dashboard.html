@@ -1,0 +1,16 @@
+<div align="center">
+    <h1><u><i>DashBoard</i></u></h1>
+    {% if user.is_authenticated %}
+    Hey {{user.username}}
+    {% endif %}
+    <div>
+        {%for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+    <form action="logout" method="get">
+        <input type="submit"  value="Logout">
+    </form>
+    
+</div>
+
