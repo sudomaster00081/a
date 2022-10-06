@@ -1,30 +1,88 @@
 {% load static %}
 
 
-<!-- CSS CUSTOM -->
+
+
+
+
+
+
+<html lang="en">
+
+<head>
+        <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+  <title>Larout</title>
+  <!-- css -->
+  <!-- favicon -->
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <script src="{% static 'JS/head.js' %}"></script>
+</head>
+<body>
+ 
+  <!-- ---------------------------------navigation -------------------------------->
+  <script src="{% static 'JS/nav.js' %}"></script>
+  <!-- -------- START HEADER 5 w/ text and illustration ------- -->
+  <header>
+    <div class="page-header min-vh-15 " style="margin-top: 132px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 my-4 ">
+            <img src="{% static 'images/logo.png' %}" width="150" height="150" alt="logo">
+            <h2 class=" texte mb-0">The Road To Explore</h2>
+            <p class="lead texte">We connect you with your personalised companion.</p>
+            <div class="buttons">
+              <a href="{% static 'HTML/login.html' %}"><button type="button" class="btn contexte texte mt-4">Get Started</button></a>
+              <button type="button" class="btn blue  shadow-none mt-4">Read more</button>
+            </div>
+          </div>
+          
+          <div class="col-lg-8 ps-5 pe-0">
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <img class="width border-radius-lg shadow mt-0 mt-lg-7 tilt" data-tilt src="{% static 'images/images.jpg' %}" alt="">
+                <!--<img class="width border-radius-lg shadow mt-0 mt-lg-7 tilt" data-tilt src="https://i.ibb.co/Z6hCZx6/images.jpg"  alt=""> -->
+              </div>
+              <div class="col-lg-3 col-6">
+                <img class=" width border-radius-lg shadow  tilt" data-tilt src="{% static 'images/images1.jpg' %}" alt="">
+                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images2.jpg' %}" alt="">
+              </div>
+              <div class="col-lg-3 col-6">
+                <img class="width border-radius-lg shadow mt-0 mt-lg-5  tilt" data-tilt src="{% static 'images/images3.jpg' %}"
+                  alt="">
+                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images4.jpg' %}" alt="">
+              </div>
+              <div class="col-lg-3 col-6">
+                <img class="width border-radius-lg shadow mt-3 tilt" data-tilt src="{% static 'images/images 5.jpg' %}" alt="">
+                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images6.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+   
+   
+   
+    <html>
+<head>
+
+	<!-- CSS CUSTOM -->
 <link rel="stylesheet" href="{% static 'CSS/Homepage.css' %}">
 <script src="{% static 'JS/Homepage.js' %}"></script>
-
-	
-</script> 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://leanmodal.finelysliced.com.au/js/jquery.leanModal.min.js"></script>
+</head>
+<body>
 <div align="center">
-
-   <u><i><h1>HomePage</h1></i></u> <br><br> 
    <div>
         {%for message in messages %}
         <h3>{{message}}</h3>
         {% endfor %}
     </div>
 </div>
-
-<head>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://leanmodal.finelysliced.com.au/js/jquery.leanModal.min.js"></script>
-</head>
-
 <div class="container">
-    <a id="modal_trigger" href="#modal" class="btn">Explore</a>
+    <a id="modal_trigger" href="#modal" class="btn"><button type="button" class="btn contexte texte mt-4" >Get Started</button></a>
 
     <div id="modal" class="popupContainer" style="display:none;">
             <header class="popupHeader">
@@ -121,150 +179,93 @@
     </div>
 </div>
 <script>
-// Plugin options and our code
-$("#modal_trigger").leanModal({
-	top: 100,
-	overlay: 0.6,
-	closeButton: ".modal_close"
-});
-$(function() {
-	// Calling Login Form
-	$("#login_form").click(function() {
-			$(".social_login").hide();
-			$(".user_login").show();
-			return false;
-	});
-
-	// Calling Register Form
-	$("#register_form").click(function() {
-			$(".social_login").hide();
-			$(".user_register").show();
-			$(".header_title").text('Register');
-			return false;
-	});
-
-	// Going back to Social Forms
-	$(".back_btn").click(function() {
-			$(".user_login").hide();
-			$(".user_register").hide();
-			$(".social_login").show();
-			$(".header_title").text('Login');
-			return false;
-	});
-});
-</script>
-<script>
-
-        //PASSWORD VALIDATION
-        function verifyPassword() {  
-                var pw = document.getElementById("passwd").value;  
-                //check empty password field  
-                
-                if(pw == "") {  
-                   document.getElementById("message").innerHTML = "**Fill the password please!";  
-                   return false;  
+  // Plugin options and our code
+  $("#modal_trigger").leanModal({
+    top: 100,
+    overlay: 0.6,
+    closeButton: ".modal_close"
+  });
+  $(function() {
+    // Calling Login Form
+    $("#login_form").click(function() {
+        $(".social_login").hide();
+        $(".user_login").show();
+        return false;
+    });
+  
+    // Calling Register Form
+    $("#register_form").click(function() {
+        $(".social_login").hide();
+        $(".user_register").show();
+        $(".header_title").text('Register');
+        return false;
+    });
+  
+    // Going back to Social Forms
+    $(".back_btn").click(function() {
+        $(".user_login").hide();
+        $(".user_register").hide();
+        $(".social_login").show();
+        $(".header_title").text('Login');
+        return false;
+    });
+  });
+          //PASSWORD VALIDATION
+          function verifyPassword() {  
+                  var pw = document.getElementById("passwd").value;  
+                  //check empty password field  
+                  
+                  if(pw == "") {  
+                     document.getElementById("message").innerHTML = "**Fill the password please!";  
+                     return false;  
+                  }  
+                   
+                 //minimum password length validation  
+                  if(pw.length < 8) {  
+                          //window.alert("HI");
+                     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+                     return false;  
+                  }  
+                  
+                //maximum length of password validation  
+                  if(pw.length > 15) {  
+                     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+                     return false;  
+                  } else {  
+                      
+                  }  
                 }  
-                 
-               //minimum password length validation  
-                if(pw.length < 8) {  
-                        //window.alert("HI");
-                   document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
-                   return false;  
-                }  
-                
-              //maximum length of password validation  
-                if(pw.length > 15) {  
-                   document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
-                   return false;  
-                } else {  
-                    
-                }  
-              }  
-</script>
-<script>
-        function checkPassword() {  
-                var pw = document.getElementById("vpasswd").value;
-                var cpw = document.getElementById("cpasswd").value;
-               // window.alert(pw + cpw)
-                if ( pw == cpw ){
-                        
-                        if(pw.length < 8) {  
-                                //window.alert("HI");
-                           document.getElementById("messages").innerHTML = "**Password length must be atleast 8 characters";  
-                           return false;  
-                        }  
-                        
-                      //maximum length of password validation  
-                        if(pw.length > 15) {  
-                           document.getElementById("messages").innerHTML = "**Password length must not exceed 15 characters";  
-                           return false;  
-                        }
-                        else {  
-                           return true;
-                        } 
-                }else{
-                        document.getElementById("messages").innerHTML = "**Password Miss Match Try Again";
-                        return false;
-                }
-        }        
-</script>
-<style>
-</style>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-        <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
-  <title>Larout</title>
-  <!-- css -->
-  <!-- favicon -->
-  <link rel="icon" href="{% static 'images/favicon.ico' %}">
-  <script src="{% static 'JS/head.js' %}"></script>
-</head>
-<body>
- 
-  <!-- ---------------------------------navigation -------------------------------->
-  <script src="{% static 'JS/nav.js' %}"></script>
-  <!-- -------- START HEADER 5 w/ text and illustration ------- -->
-  <header>
-    <div class="page-header min-vh-15 " style="margin-top: 132px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 my-4 ">
-            <img src="{% static 'images/logo.png' %}" width="150" height="150" alt="logo">
-            <h2 class=" texte mb-0">The Road To Explore</h2>
-            <p class="lead texte">We connect you with your personalised companion.</p>
-            <div class="buttons">
-              <a href="{% static 'HTML/login.html' %}"><button type="button" class="btn contexte texte mt-4">Get Started</button></a>
-              <button type="button" class="btn blue  shadow-none mt-4">Read more</button>
-            </div>
-          </div>
-          <div class="col-lg-8 ps-5 pe-0">
-            <div class="row">
-              <div class="col-lg-3 col-6">
-                <img class="width border-radius-lg shadow mt-0 mt-lg-7 tilt" data-tilt src="{% static 'images/images.jpg' %}" alt="">
-                <!--<img class="width border-radius-lg shadow mt-0 mt-lg-7 tilt" data-tilt src="https://i.ibb.co/Z6hCZx6/images.jpg"  alt=""> -->
-              </div>
-              <div class="col-lg-3 col-6">
-                <img class=" width border-radius-lg shadow  tilt" data-tilt src="{% static 'images/images1.jpg' %}" alt="">
-                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images2.jpg' %}" alt="">
-              </div>
-              <div class="col-lg-3 col-6">
-                <img class="width border-radius-lg shadow mt-0 mt-lg-5  tilt" data-tilt src="{% static 'images/images3.jpg' %}"
-                  alt="">
-                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images4.jpg' %}" alt="">
-              </div>
-              <div class="col-lg-3 col-6">
-                <img class="width border-radius-lg shadow mt-3 tilt" data-tilt src="{% static 'images/images 5.jpg' %}" alt="">
-                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images6.jpg' %}" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+  
+                function checkPassword() {  
+                  var pw = document.getElementById("vpasswd").value;
+                  var cpw = document.getElementById("cpasswd").value;
+                 // window.alert(pw + cpw)
+                  if ( pw == cpw ){
+                          
+                          if(pw.length < 8) {  
+                                  //window.alert("HI");
+                             document.getElementById("messages").innerHTML = "**Password length must be atleast 8 characters";  
+                             return false;  
+                          }  
+                          
+                        //maximum length of password validation  
+                          if(pw.length > 15) {  
+                             document.getElementById("messages").innerHTML = "**Password length must not exceed 15 characters";  
+                             return false;  
+                          }
+                          else {  
+                             return true;
+                          } 
+                  }else{
+                          document.getElementById("messages").innerHTML = "**Password Miss Match Try Again";
+                          return false;
+                  }
+          } 
+  
+          
+  </script>
+</body>
+</html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   </header>
   <!-- -------- END HEADER 5 w/ text and illustration ------- -->
