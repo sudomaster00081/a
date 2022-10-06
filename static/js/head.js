@@ -24,4 +24,4 @@ document.writeln('  <link id="pagestyle" href="https://appsrv1-147a1.kxcdn.com/s
 document.writeln('    rel="stylesheet" />');
 document.writeln('');
 document.writeln('  <!-- Specific CSS do goes HERE -->');
-document.writeln('  <link rel="stylesheet" href="/static/CSS/style.css">');
+document.writeln('  <link rel="stylesheet" href="/static/css/style.css">');

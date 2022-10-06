@@ -72,16 +72,42 @@ STATICFILES_DIRS = [
 
 
 
+#HEROKU
+# create Procfile
+web: gunicorn laroute0001.wsgi
+
+pip install gunicorn
+
+pip install django-heroku
+#in settings.py
+import django_heroku
+#heroku
+django_heroku.settings(locals())
 
 
 
+#GIT
+
+git init
+
+git add .
+
+git commit -m "First Commit"
+
+
+heroku login
+heroku create app-name
+git push heroku master
+heroku open
+heroku run python manage.py migrate
 
 
 
+#on change
 
-
-
-
+git add .
+git commit -m "edit"
+git push heroku master
 
 
 
