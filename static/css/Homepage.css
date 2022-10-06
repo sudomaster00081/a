@@ -45,16 +45,16 @@ h1 {
 }
 */
 .btn_red {
-		background: #ED6347;
+		background: #21ade9;
 		color: #FFF;
 }
 
 .btn:hover {
-		background: #E4E4E2;
+		background: #a6f8d6;
 }
 
 .btn_red:hover {
-		background: #C12B05;
+		background: #a0d7fb;
 }
 
 a.btn {
@@ -115,7 +115,7 @@ a.btn_red {
 		clear: both;
 		padding: 10px;
 		margin-bottom: 10px;
-		background: #F4F4F2;
+		background: #d3f371;
 		overflow: hidden;
 }
 

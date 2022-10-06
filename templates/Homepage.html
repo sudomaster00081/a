@@ -18,7 +18,13 @@
   <script src="{% static 'JS/head.js' %}"></script>
 </head>
 <body>
- 
+  <div align="center">
+    <div>
+         {%for message in messages %}
+         <h3 style="color: red;">{{message}}</h3>
+         {% endfor %}
+     </div>
+ </div>
   <!-- ---------------------------------navigation -------------------------------->
   <script src="{% static 'JS/nav.js' %}"></script>
   <!-- -------- START HEADER 5 w/ text and illustration ------- -->
@@ -31,8 +37,8 @@
             <h2 class=" texte mb-0">The Road To Explore</h2>
             <p class="lead texte">We connect you with your personalised companion.</p>
             <div class="buttons">
-              <a href="{% static 'HTML/login.html' %}"><button type="button" class="btn contexte texte mt-4">Get Started</button></a>
-              <button type="button" class="btn blue  shadow-none mt-4">Read more</button>
+              <a ><button type="button" onclick="document.getElementById('primaryButton').click()" class="btn contexte texte mt-4">Get Started</button></a>
+              <a href="#contexte"><button type="button"  class="btn blue  shadow-none mt-4">Read more</button></a>
             </div>
           </div>
           
@@ -64,25 +70,16 @@
    
    
    
-    <html>
-<head>
+
 
 	<!-- CSS CUSTOM -->
 <link rel="stylesheet" href="{% static 'CSS/Homepage.css' %}">
 <script src="{% static 'JS/Homepage.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://leanmodal.finelysliced.com.au/js/jquery.leanModal.min.js"></script>
-</head>
-<body>
-<div align="center">
-   <div>
-        {%for message in messages %}
-        <h3>{{message}}</h3>
-        {% endfor %}
-    </div>
-</div>
+
 <div class="container">
-    <a id="modal_trigger" href="#modal" class="btn"><button type="button" class="btn contexte texte mt-4" >Get Started</button></a>
+    <a id="modal_trigger" href="#modal" ><button hidden id="primaryButton" type="button"  >Get Started</button></a>
 
     <div id="modal" class="popupContainer" style="display:none;">
             <header class="popupHeader">
@@ -264,10 +261,8 @@
   
           
   </script>
-</body>
-</html>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-  </header>
   <!-- -------- END HEADER 5 w/ text and illustration ------- -->
   <!------------------------services------------------------------>
   <section class="my-5 py-5" id="contexte">
