@@ -119,21 +119,25 @@
 								{% csrf_token %}
                                                                 <label style="color:red" id="message"></label>
                                     <label>Username</label>
-                                    <input required name="uname" type="text" />
+                                    
+                                      <input required name="uname" type="text" class="form-control" />
                                     <br />
+                                    
+                                    
 
                                     <label>Password</label>
-                                    <input required id="passwd" name="passwd" type="password" />
+                                    
+                                    <input required id="passwd" name="passwd" type="password" class="form-control" />
                                     <br />
 
                                     <div class="checkbox">
-                                            <input id="remember" type="checkbox" />
+                                            <input id="remember" type="checkbox"  />
                                             <label for="remember">Remember me on this computer</label>
                                     </div>
 
                                     <div class="action_btns">
                                             <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                                            <div class="one_half last"><input  type="submit"  class="btn btn_red" value="Login"></div>
+                                            <div class="one_half last"><input  type="submit"  class="btn btn_red" value="Login" ></div>
                                     </div>
                             </form>
 
@@ -146,21 +150,21 @@
 								{% csrf_token %}
                                                                 <label style="color:red" id="messages"></label>
                                     <label>UserName</label>
-                                    <input required name="uname" type="text" />
+                                    <input required name="uname" type="text"  class="form-control"/>
                                     <br />
 
                                     <label>Email Address</label>
-                                    <input required name="email" type="email" />
+                                    <input required name="email" type="email" class="form-control" />
                                     <br />
 
                                     <label>Password</label>
-                                    <input required id="vpasswd" name="passwd" type="password" />
+                                    <input required id="vpasswd" name="passwd" type="password" class="form-control" />
                                     <br />
 
-									<label>Confirm Password</label>
-                                    <input required id="cpasswd" name="cpasswd" type="password" />
+									                   <label>Confirm Password</label>
+                                    <input required id="cpasswd" name="cpasswd" type="password" class="form-control" />
                                     <br />
-
+                                  
                                     <div class="checkbox">
                                             <input id="send_updates" type="checkbox" />
                                             <label for="send_updates">Send me occasional email updates</label>
