@@ -1,5 +1,5 @@
 from django.shortcuts import render , redirect
-from django.http import HttpResponse
+from django.http import HttpResponse ,JsonResponse
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
 # Create your views here.
@@ -60,3 +60,26 @@ def dashboard(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+def ajlogin(request):
+    if request.method == 'POST':
+        uname = request.POST['uname']
+        paswd = request.POST['passwd']
+        user = auth.authenticate(username=uname,password=paswd)
+        if user is not None :
+            auth.login(request, user)
+            messages.info(request, 'Login Successfull')
+            #return render(request, 'Dashboard.html',{ 'result' : uname})
+            return JsonResponse(
+                {'success' : True},
+                safe = False
+            )
+        else :
+            #messages.info(request, 'Invalid Credentials')
+            return JsonResponse(
+                {'success' : False},
+                safe = False
+            )  
+    else :
+         return render(request, 'Dashboard.html')
+

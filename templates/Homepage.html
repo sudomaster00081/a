@@ -18,7 +18,7 @@
   <script src="{% static 'js/head.js' %}"></script>
 </head>
 <body>
-  <div align="center">
+  <div id="top" align="center">
     <div>
          {%for message in messages %}
          <h3 style="color: red;">{{message}}</h3>
@@ -120,7 +120,7 @@
                                                                 <label style="color:red" id="message"></label>
                                     <label>Username</label>
                                     
-                                      <input required name="uname" type="text" class="form-control" />
+                                      <input required id="uname" name="uname" type="text" class="form-control" />
                                     <br />
                                     
                                     
@@ -137,10 +137,36 @@
 
                                     <div class="action_btns">
                                             <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                                            <div class="one_half last"><input  type="submit"  class="btn btn_red" value="Login" ></div>
+                                            <div class="one_half last"><input id="btn1"  type="button"  class="btn btn_red" value="Login" ></div>
                                     </div>
                             </form>
-
+                            
+                            <script>
+                              //AJAXX
+                              $('#btn1').click(() => {
+                                //console.log("hi");
+                                var uname = $('#uname').val()
+                                var passwd = $('#passwd').val()
+                                var data = {
+                                  'csrfmiddlewaretoken' : '{{csrf_token}}',
+                                  'uname' : uname ,
+                                  'passwd' : passwd
+                                }
+                                $.ajax({
+                                  url : 'ajlogin',
+                                  method : 'POST',
+                                  data : data,
+                                  dataType : 'json', 
+                                  success : function(data){
+                                    if(data.success){
+                                      window.location.replace('login')
+                                    }else{
+                                      $('#message').html('Invalid Credentials')
+                                    }
+                                  }
+                                })
+                              })
+                            </script>
                             <a href="#" class="forgot_password">Forgot password?</a>
                     </div>
 
@@ -268,6 +294,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <!-- -------- END HEADER 5 w/ text and illustration ------- -->
+  <div id="services123"></div>
   <!------------------------services------------------------------>
   <section class="my-5 py-5" id="contexte">
     <div class="container ">
@@ -336,7 +363,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><div id="blogs123"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   </section>
   <!-- END Section with four info areas left & one card right with image and waves -->
@@ -479,7 +506,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div><div id="aboutus123"></div>
     </div>
   </section>
 
@@ -594,6 +621,7 @@
       </div>
     </div>
   </section>
+  <div id="contactus123"></div>
   <!-----------------------contact us -------------- -->
   <section class="py-7">
     <div class="container">
