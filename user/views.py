@@ -23,7 +23,7 @@ def login(request):
             messages.info(request, 'Invalid Credentials')
             return render(request , 'Homepage.html')   
     else :
-         return render(request, 'Dashboard.html')
+         return redirect('dashboard')
 
 
 def signup(request):

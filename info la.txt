@@ -110,8 +110,9 @@ git commit -m "edit"
 git push heroku master
 
 
+#New app dashboard
 
-
+python manage.py startapp dashboard
 
 
 

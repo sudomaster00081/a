@@ -3,7 +3,7 @@ document.write('            <hr class="vertical dark mt-0">');
 document.write('            <div class=" navbar-collapse mt-5 " id="sidenav-collapse-main">');
 document.write('              <ul class="navbar-nav">');
 document.write('                <li class="nav-item mb-3 dashboardico">');
-document.write('                  <a class="nav-link  active " href="/HTML/Dashboard/Companion.html">');
+document.write('                  <a class="nav-link  active " href="companion">');
 document.write('                    <div class="icon icon-shape-sm icon-sm shadow border-radius-md bg-white text-center mx-3 ">');
 document.write('                      <i class="fa fa-home texte"></i>');
 document.write('                    </div>');
@@ -11,7 +11,7 @@ document.write('                    <span class="nav-link-text ms-1 ">Companion<
 document.write('                  </a>');
 document.write('                </li>');
 document.write('                <li class="nav-item mb-3 dashboardico">');
-document.write('                  <a class="nav-link  active " href="/HTML/Dashboard/plan_trip.html">');
+document.write('                  <a class="nav-link  active " href="plantrip">');
 document.write('                    <div class="icon icon-shape-sm icon-sm shadow border-radius-md bg-white text-center mx-3 ">');
 document.write('                      <i class="fa fa-mountain texte"></i>');
 document.write('                    </div>');
@@ -19,7 +19,7 @@ document.write('                    <span class="nav-link-text ms-1">Plan Trip</
 document.write('                  </a>');
 document.write('                </li>');
 document.write('                <li class="nav-item mb-3 dashboardico">');
-document.write('                  <a class="nav-link  active " href="/HTML/Dashboard/chats.html">');
+document.write('                  <a class="nav-link  active " href="chat">');
 document.write('                    <div class="icon icon-shape-sm icon-sm shadow border-radius-md bg-white text-center mx-3 ">');
 document.write('                      <i class="far fa-comment-dots texte"></i>');
 document.write('                    </div>');
@@ -27,7 +27,7 @@ document.write('                    <span class="nav-link-text ms-1">chats</span
 document.write('                  </a>');
 document.write('                </li>');
 document.write('                <li class="nav-item mb-3 dashboardico">');
-document.write('                  <a class="nav-link  active " href="/HTML/Dashboard/blog.gtml">');
+document.write('                  <a class="nav-link  active " href="blog">');
 document.write('                    <div class="icon icon-shape-sm icon-sm shadow border-radius-md bg-white text-center mx-3 ">');
 document.write('                      <i class="fa fa-book-open texte"></i>');
 document.write('                    </div>');
@@ -35,7 +35,7 @@ document.write('                    <span class="nav-link-text ms-1">Blogs</span
 document.write('                  </a>');
 document.write('                </li>');
 document.write('                <li class="nav-item mb-3 dashboardico pro">');
-document.write('                  <a class="nav-link  active " href="/HTML/Dashboard/profile.html">');
+document.write('                  <a class="nav-link  active " href="profile">');
 document.write('                    <div class="icon icon-shape-sm icon-sm shadow border-radius-md bg-white text-center mx-3 ">');
 document.write('                      <i class="fa fa-user texte"></i>');
 document.write('                    </div>');
