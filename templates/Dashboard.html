@@ -116,29 +116,29 @@ profile
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>profile</title>
   <!---------------head----------- -->
-  <script src="/JS/head.js"></script>
+  <script src="{% static '/js/head.js' %}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!--------------css------------ -->
-  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 
 <body>
   <div class="container-fluid">
     <!-- -------------------------header ------------------------ -->
-    <script src="/JS/nav2.js"></script>
+    <script src="{% static '/js/nav2.js' %}"></script>
     <!-- -------------------------side bar---------------------- -->
     <div class="row">
-      <script src="/JS/dashboard.js"></script>
+      <script src="{% static '/js/dashboard.js' %}"></script>
       <div class="col-9">
         <div class="page-header min-height-150 border-radius-xl mt-1 "
-          style="background-image: url('/images/profile.jpeg'); background-position-y: 50%;">
+          style="background-image: url('static/images/profile.jpeg'); background-position-y: 50%;">
           <span class="mask  opacity-6"></span>
         </div>
         <div class="card card-body blur shadow-blur mx-4 mt-n6">
           <div class="row gx-4">
             <div class="col-auto">
               <div class="avatar avatar-xl position-relative">
-                <img src="/images/images6.jpg" alt="..." class="w-50 border-radius-lg shadow-sm">
+                <img src="{% static '/images/images6.jpg' %}" alt="..." class="w-50 border-radius-lg shadow-sm">
                 <!-- <a href="javascript:;"
               class="btn btn-sm btn-icon-only bg-gradient-light position-absolute bottom-0 end-0 mb-n2 me-n2">
               <i class="fa fa-pen top-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Image"></i>
@@ -205,15 +205,15 @@ Plan a trip
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plan a trip</title>
     <!---------------head----------- -->
-    <script src="/JS/head.js"></script>
+    <script src="{% static '/js/head.js' %}"></script>
     <!--------------css------------ -->
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 <body>
     <div class="container-fluid py-4" id="contexte">
-        <script src="/JS/nav2.js"></script>
+        <script src="{% static '/js/nav2.js' %}"></script>
         <div class="row">
-          <script src="/JS/dashboard.js"></script>
+          <script src="{% static '/js/dashboard.js' %}"></script>
           <div class="col-8">
             <div class="container-fluid py-4">
                 <div class="row my-3">
@@ -261,7 +261,7 @@ Plan a trip
                               <td>
                                 <div class="d-flex px-2 py-2">
                                   <div>
-                                    <img src="/images/companion1.jpg" class="avatar avatar-sm me-3">
+                                    <img src="{% static '/images/companion1.jpg' %}" class="avatar avatar-sm me-3">
                                   </div>
                                   <div class="d-flex flex-column justify-content-center">
                                     <h6 class="mb-0 text-sm">John Michael</h6>
@@ -276,7 +276,7 @@ Plan a trip
                                 <td>
                                   <div class="d-flex px-2 py-2">
                                     <div>
-                                      <img src="/images/companion1.jpg" class="avatar avatar-sm me-3">
+                                      <img src="{% static '/images/companion1.jpg' %}" class="avatar avatar-sm me-3">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                       <h6 class="mb-0 text-sm">John Michael</h6>
@@ -291,7 +291,7 @@ Plan a trip
                                 <td>
                                   <div class="d-flex px-2 py-2">
                                     <div>
-                                      <img src="/images/companion1.jpg" class="avatar avatar-sm me-3">
+                                      <img src="{% static '/images/companion1.jpg' %}" class="avatar avatar-sm me-3">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                       <h6 class="mb-0 text-sm">John Michael</h6>
@@ -306,7 +306,7 @@ Plan a trip
                                 <td>
                                   <div class="d-flex px-2 py-2">
                                     <div>
-                                      <img src="/images/companion1.jpg" class="avatar avatar-sm me-3">
+                                      <img src="{% static '/images/companion1.jpg' %}" class="avatar avatar-sm me-3">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                       <h6 class="mb-0 text-sm">John Michael</h6>
@@ -321,7 +321,7 @@ Plan a trip
                                 <td>
                                   <div class="d-flex px-2 py-2">
                                     <div>
-                                      <img src="/images/companion1.jpg" class="avatar avatar-sm me-3">
+                                      <img src="{% static '/images/companion1.jpg' %}" class="avatar avatar-sm me-3">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                       <h6 class="mb-0 text-sm">John Michael</h6>
@@ -336,7 +336,7 @@ Plan a trip
                                 <td>
                                   <div class="d-flex px-2 py-2">
                                     <div>
-                                      <img src="/images/companion1.jpg" class="avatar avatar-sm me-3">
+                                      <img src="{% static '/images/companion1.jpg' %}" class="avatar avatar-sm me-3">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
                                       <h6 class="mb-0 text-sm">John Michael</h6>
@@ -369,15 +369,15 @@ companion
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <!---------------head----------- -->
-    <script src="/JS/head.js"></script>
+    <script src="{% static '/js/head.js' %}"></script>
     <!--------------css------------ -->
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 <body>
     <div class="container-fluid py-4">
-        <script src="/JS/nav2.js"></script>
+        <script src="{% static '/js/nav2.js' %}"></script>
         <div class="row">
-          <script src="/JS/dashboard.js"></script>
+          <script src="{% static '/js/dashboard.js' %}"></script>
           <div class="col-8">
             
           </div>
@@ -396,18 +396,18 @@ chats
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chat</title>
     <!---------------head----------- -->
-    <script src="/JS/head.js"></script>
+    <script src="{% static '/js/head.js' %}"></script>
     <!--------------css------------ -->
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
   </head> 
   <body>
     <!-- ---------------------------------navigation -------------------------------->
   <!-----------------header--------------------- -->
 
   <div class="container-fluid py-4">
-    <script src="/JS/nav2.js"></script>
+    <script src="{% static '/js/nav2.js' %}"></script>
     <div class="row">
-      <script src="/JS/dashboard.js"></script>
+      <script src="{% static '/js/dashboard.js' %}"></script>
       <div class="col-8">
         <div class="card mb-4">
           <div class="card-header pb-0">
@@ -430,7 +430,7 @@ chats
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="/images/comfindedited.png" class="avatar avatar-sm me-3">
+                          <img src="{% static '/images/comfindedited.png' %}" class="avatar avatar-sm me-3">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">John Michael</h6>
@@ -458,7 +458,7 @@ chats
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="/images/comfindedited.png" class="avatar avatar-sm me-3">
+                          <img src="{% static '/images/comfindedited.png' %}" class="avatar avatar-sm me-3">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Alexa Liras</h6>
@@ -486,7 +486,7 @@ chats
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="/images/comfindedited.png" class="avatar avatar-sm me-3">
+                          <img src="{% static '/images/comfindedited.png' %}" class="avatar avatar-sm me-3">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Laurent Perrier</h6>
@@ -514,7 +514,7 @@ chats
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="/images/comfindedited.png" class="avatar avatar-sm me-3">
+                          <img src="{% static '/images/comfindedited.png' %}" class="avatar avatar-sm me-3">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Michael Levi</h6>
@@ -542,7 +542,7 @@ chats
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="/images/comfindedited.png" class="avatar avatar-sm me-3">
+                          <img src="{% static '/images/comfindedited.png' %}" class="avatar avatar-sm me-3">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Richard Gran</h6>
@@ -570,7 +570,7 @@ chats
                     <td>
                       <div class="d-flex px-2 py-1">
                         <div>
-                          <img src="/images/comfindedited.png" class="avatar avatar-sm me-3">
+                          <img src="{% static '/images/comfindedited.png' %}" class="avatar avatar-sm me-3">
                         </div>
                         <div class="d-flex flex-column justify-content-center">
                           <h6 class="mb-0 text-sm">Miriam Eric</h6>
@@ -614,17 +614,17 @@ Blogs
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <!---------------head----------- -->
-    <script src="/JS/head.js"></script>
+    <script src="{% static '/js/head.js' %}"></script>
     <!--------------css------------ -->
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 <body>
     <div class="container-fluid py-5" id="contexte">
         <!-----------------------nav---------------- -->
-        <script src="/JS/nav2.js"></script>
+        <script src="{% static '/js/nav2.js' %}"></script>
         <div class="row">
             <!----------------------sidebar----------------- -->
-          <script src="/JS/dashboard.js"></script>
+          <script src="{% static '/js/dashboard.js' %}"></script>
           <div class="col-8">
             <div class="col-md-7 mb-2">
                 <h3 class="texte"> Blogs</h3>

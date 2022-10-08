@@ -10,21 +10,22 @@
 <html lang="en">
 
 <head>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <title>Larout</title>
   <!-- css -->
   <!-- favicon -->
   <link rel="icon" href="{% static 'images/favicon.ico' %}">
   <script src="{% static 'js/head.js' %}"></script>
 </head>
+
 <body>
   <div id="top" align="center">
     <div>
-         {%for message in messages %}
-         <h3 style="color: red;">{{message}}</h3>
-         {% endfor %}
-     </div>
- </div>
+      {%for message in messages %}
+      <h3 style="color: red;">{{message}}</h3>
+      {% endfor %}
+    </div>
+  </div>
   <!-- ---------------------------------navigation -------------------------------->
   <script src="{% static 'js/nav.js' %}"></script>
   <!-- -------- START HEADER 5 w/ text and illustration ------- -->
@@ -37,689 +38,744 @@
             <h2 class=" texte mb-0">The Road To Explore</h2>
             <p class="lead texte">We connect you with your personalised companion.</p>
             <div class="buttons">
-              <a ><button type="button" onclick="document.getElementById('primaryButton').click()" class="btn contexte texte mt-4">Get Started</button></a>
-              <a href="#contexte"><button type="button"  class="btn blue  shadow-none mt-4">Read more</button></a>
+              <a><button type="button" onclick="document.getElementById('primaryButton').click()"
+                  class="btn contexte texte mt-4">Get Started</button></a>
+              <a href="#contexte"><button type="button" class="btn blue  shadow-none mt-4">Read more</button></a>
             </div>
           </div>
-          
+
           <div class="col-lg-8 ps-5 pe-0">
             <div class="row">
               <div class="col-lg-3 col-6">
-                <img class="width border-radius-lg shadow mt-0 mt-lg-7 tilt" data-tilt src="{% static 'images/images.jpg' %}" alt="">
+                <img class="width border-radius-lg shadow mt-0 mt-lg-7 tilt" data-tilt
+                  src="{% static 'images/images.jpg' %}" alt="">
                 <!--<img class="width border-radius-lg shadow mt-0 mt-lg-7 tilt" data-tilt src="https://i.ibb.co/Z6hCZx6/images.jpg"  alt=""> -->
               </div>
               <div class="col-lg-3 col-6">
-                <img class=" width border-radius-lg shadow  tilt" data-tilt src="{% static 'images/images1.jpg' %}" alt="">
-                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images2.jpg' %}" alt="">
-              </div>
-              <div class="col-lg-3 col-6">
-                <img class="width border-radius-lg shadow mt-0 mt-lg-5  tilt" data-tilt src="{% static 'images/images3.jpg' %}"
+                <img class=" width border-radius-lg shadow  tilt" data-tilt src="{% static 'images/images1.jpg' %}"
                   alt="">
-                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images4.jpg' %}" alt="">
+                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images2.jpg' %}"
+                  alt="">
               </div>
               <div class="col-lg-3 col-6">
-                <img class="width border-radius-lg shadow mt-3 tilt" data-tilt src="{% static 'images/images 5.jpg' %}" alt="">
-                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images6.jpg' %}" alt="">
+                <img class="width border-radius-lg shadow mt-0 mt-lg-5  tilt" data-tilt
+                  src="{% static 'images/images3.jpg' %}" alt="">
+                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images4.jpg' %}"
+                  alt="">
+              </div>
+              <div class="col-lg-3 col-6">
+                <img class="width border-radius-lg shadow mt-3 tilt" data-tilt src="{% static 'images/images 5.jpg' %}"
+                  alt="">
+                <img class="width border-radius-lg shadow mt-4 tilt" data-tilt src="{% static 'images/images6.jpg' %}"
+                  alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-   
-   
-   
-   
 
 
-	<!-- CSS CUSTOM -->
-<link rel="stylesheet" href="{% static 'css/Homepage.css' %}">
-<script src="{% static 'js/Homepage.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+    <!-- CSS CUSTOM -->
+    <link rel="stylesheet" href="{% static 'css/Homepage.css' %}">
+    <script src="{% static 'js/Homepage.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
     <script src="https://leanmodal.finelysliced.com.au/js/jquery.leanModal.min.js"></script>
 
-<div class="container">
-    <a id="modal_trigger" href="#modal" ><button hidden id="primaryButton" type="button"  >Get Started</button></a>
+    <div class="container">
+      <a id="modal_trigger" href="#modal"><button hidden id="primaryButton" type="button">Get Started</button></a>
 
-    <div id="modal" class="popupContainer" style="display:none;">
-            <header class="popupHeader">
-                    <span class="header_title">Hi There</span>
-                    <span class="modal_close"><i class="fa fa-times"></i></span>
-            </header>
+      <div id="modal" class="popupContainer" style="display:none;">
+        <header class="popupHeader">
+          <span class="header_title">Hi There</span>
+          <span class="modal_close"><i class="fa fa-times"></i></span>
+        </header>
 
-            <section class="popupBody">
-                    <!-- Social Login -->
-                    <div class="social_login">
-                            <div class="">
-                                    <a href="#" class="social_box fb">
-                                            <span class="icon"><i class="fa fa-facebook"></i></span>
-                                            <span class="icon_title">Connect with Facebook</span>
+        <section class="popupBody">
+          <!-- Social Login -->
+          <div class="social_login">
+            <div class="">
+              <a href="#" class="social_box fb">
+                <span class="icon"><i class="fa fa-facebook"></i></span>
+                <span class="icon_title">Connect with Facebook</span>
 
-                                    </a>
+              </a>
 
-                                    <a href="#" class="social_box google">
-                                            <span class="icon"><i class="fa fa-google-plus"></i></span>
-                                            <span class="icon_title">Connect with Google</span>
-                                    </a>
-                            </div>
+              <a href="#" class="social_box google">
+                <span class="icon"><i class="fa fa-google-plus"></i></span>
+                <span class="icon_title">Connect with Google</span>
+              </a>
+            </div>
 
-                            <div class="centeredText">
-                                    <span>Or use your Email address</span>
-                            </div>
+            <div class="centeredText">
+              <span>Or use your Email address</span>
+            </div>
 
-                            <div class="action_btns">
-                                    <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
-                                    <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
-                            </div>
-                    </div>
+            <div class="action_btns">
+              <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+              <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+          </div>
 
-                    <!-- Username & Password Login form -->
-                    <div class="user_login">
-                            <form onsubmit ="return verifyPassword()" name="login" action="login" method="post">
-								{% csrf_token %}
-                                                                <label style="color:red" id="message"></label>
-                                    <label>Username</label>
-                                    
-                                      <input required id="uname" name="uname" type="text" class="form-control" />
-                                    <br />
-                                    
-                                    
+          <!-- Username & Password Login form -->
+          <div class="user_login">
+            <form  name="login" id = "login" method="post">
+              {% csrf_token %}
+              <label style="color:red" id="message"></label>
+              <label>Username</label>
 
-                                    <label>Password</label>
-                                    
-                                    <input required id="passwd" name="passwd" type="password" class="form-control" />
-                                    <br />
+              <input required id="uname" name="uname" type="text" class="form-control" />
+              <br />
 
-                                    <div class="checkbox">
-                                            <input id="remember" type="checkbox"  />
-                                            <label for="remember">Remember me on this computer</label>
-                                    </div>
 
-                                    <div class="action_btns">
-                                            <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                                            <div class="one_half last"><input id="btn1"  type="button"  class="btn btn_red" value="Login" ></div>
-                                    </div>
-                            </form>
-                            
-                            <script>
-                              //AJAXX
-                              $('#btn1').click(() => {
-                                //console.log("hi");
-                                var uname = $('#uname').val()
-                                var passwd = $('#passwd').val()
-                                var data = {
-                                  'csrfmiddlewaretoken' : '{{csrf_token}}',
-                                  'uname' : uname ,
-                                  'passwd' : passwd
-                                }
-                                $.ajax({
-                                  url : 'ajlogin',
-                                  method : 'POST',
-                                  data : data,
-                                  dataType : 'json', 
-                                  success : function(data){
-                                    if(data.success){
-                                      window.location.replace('login')
-                                    }else{
-                                      $('#message').html('Invalid Credentials')
-                                    }
-                                  }
-                                })
-                              })
-                            </script>
-                            <a href="#" class="forgot_password">Forgot password?</a>
-                    </div>
 
-                    <!-- Register Form -->
-                    <div class="user_register">
-                            <form onsubmit="return checkPassword()" name="signup" method="post" action="signup">
-								{% csrf_token %}
-                                                                <label style="color:red" id="messages"></label>
-                                    <label>UserName</label>
-                                    <input required name="uname" type="text"  class="form-control"/>
-                                    <br />
+              <label>Password</label>
 
-                                    <label>Email Address</label>
-                                    <input required name="email" type="email" class="form-control" />
-                                    <br />
+              <input required id="passwd" name="passwd" type="password" class="form-control" />
+              <br />
 
-                                    <label>Password</label>
-                                    <input required id="vpasswd" name="passwd" type="password" class="form-control" />
-                                    <br />
+              <div class="checkbox">
+                <input id="remember" type="checkbox" />
+                <label for="remember">Remember me on this computer</label>
+              </div>
 
-									                   <label>Confirm Password</label>
-                                    <input required id="cpasswd" name="cpasswd" type="password" class="form-control" />
-                                    <br />
-                                  
-                                    <div class="checkbox">
-                                            <input id="send_updates" type="checkbox" />
-                                            <label for="send_updates">Send me occasional email updates</label>
-                                    </div>
+              <div class="action_btns">
+                <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a>
+                </div>
+                <div class="one_half last"><input id="btn1"     type="submit" class="btn btn_red" value="Login"></div>
+              </div>
+            </form>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+              integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+              
+            <script>
 
-                                    <div class="action_btns">
-                                            <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                                            <div class="one_half last"><input type="submit"  class="btn btn_red" value="Register"></div>
-                                    </div>
-                            </form>
-                    </div>
-            </section>
-    </div>
-</div>
-<script>
-  // Plugin options and our code
-  $("#modal_trigger").leanModal({
-    top: 100,
-    overlay: 0.6,
-    closeButton: ".modal_close"
-  });
-  $(function() {
-    // Calling Login Form
-    $("#login_form").click(function() {
-        $(".social_login").hide();
-        $(".user_login").show();
-        return false;
-    });
-  
-    // Calling Register Form
-    $("#register_form").click(function() {
-        $(".social_login").hide();
-        $(".user_register").show();
-        $(".header_title").text('Register');
-        return false;
-    });
-  
-    // Going back to Social Forms
-    $(".back_btn").click(function() {
-        $(".user_login").hide();
-        $(".user_register").hide();
-        $(".social_login").show();
-        $(".header_title").text('Login');
-        return false;
-    });
-  });
-          //PASSWORD VALIDATION
-          function verifyPassword() {  
-                  var pw = document.getElementById("passwd").value;  
-                  //check empty password field  
-                  
-                  if(pw == "") {  
-                     document.getElementById("message").innerHTML = "**Fill the password please!";  
-                     return false;  
-                  }  
-                   
-                 //minimum password length validation  
-                  if(pw.length < 8) {  
-                          //window.alert("HI");
-                     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
-                     return false;  
-                  }  
-                  
-                //maximum length of password validation  
-                  if(pw.length > 15) {  
-                     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
-                     return false;  
-                  } else {  
+              //AJAXX
+              
+
+              $(document).ready(function () {
+                $("#login").validate({
+                  rules : {
+                    uname: {
+                      required: true,
+                      minlength : 2
+                    },
+                    passwd : {
+                      required : true,
+                      minlength : 8
+                    },
+                    
+              
+                  },
+                  submitHandler : function verifyLogin() {
+                    var pw = document.getElementById("passwd").value;
+                    var un = document.getElementById("uname").value;
+                    //check empty password field  
+                    if (un == "") {
+                      document.getElementById("message").innerHTML = "**Fill the Username please!";
+                      return false;
                       
-                  }  
-                }  
-  
-                function checkPassword() {  
-                  var pw = document.getElementById("vpasswd").value;
-                  var cpw = document.getElementById("cpasswd").value;
-                 // window.alert(pw + cpw)
-                  if ( pw == cpw ){
-                          
-                          if(pw.length < 8) {  
-                                  //window.alert("HI");
-                             document.getElementById("messages").innerHTML = "**Password length must be atleast 8 characters";  
-                             return false;  
-                          }  
-                          
-                        //maximum length of password validation  
-                          if(pw.length > 15) {  
-                             document.getElementById("messages").innerHTML = "**Password length must not exceed 15 characters";  
-                             return false;  
+                    }
+            
+            
+                    if (pw == "") {
+                      document.getElementById("message").innerHTML = "**Fill the password please!";
+                      return false;
+                    }
+            
+                    //minimum password length validation  
+                    if (pw.length < 8) {
+                      //window.alert("HI");
+                      document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+                      return false;
+                    }
+            
+                    //maximum length of password validation  
+                    if (pw.length > 15) {
+                      document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+                      return false;
+                    } else {
+                      {
+                        //console.log("hi");
+                        var uname = $('#uname').val()
+                        var passwd = $('#passwd').val()
+                        var data = {
+                          'csrfmiddlewaretoken': '{{csrf_token}}',
+                          'uname': uname,
+                          'passwd': passwd
+                        }
+                        $.ajax({
+                          url: 'ajlogin',
+                          method: 'POST',
+                          data: data,
+                          dataType: 'json',
+                          success: function (data) {
+                            if (data.success) {
+                              window.alert("hi");
+                              window.location.replace('login')
+                            } else {
+                              $('#message').html('**Invalid Credentials')
+                            }
                           }
-                          else {  
-                             return true;
-                          } 
-                  }else{
-                          document.getElementById("messages").innerHTML = "**Password Miss Match Try Again";
-                          return false;
+                        })
+                      }
+                    }
                   }
-          } 
-  
-          
-  </script>
+                
+                })
+              })
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-  <!-- -------- END HEADER 5 w/ text and illustration ------- -->
-  <div id="services123"></div>
-  <!------------------------services------------------------------>
-  <section class="my-5 py-5" id="contexte">
-    <div class="container ">
-      <div class="row">
-        <div class="col-md-7 mb-5">
-          <div class="icon icon-shape contexte shadow text-center mb-3">
-            <i class="fa fa-check" aria-hidden="true"></i>
-          </div>
-          <h3 class="texte">Our Service</h3>
-          <p>This is the paragraph where you can write more details about your team. Keep you user engaged by providing
-            meaningful information.</p>
-        </div>
-      </div>
-      <div class="row mt-1">
-        <div class="col-lg-6 mx-0">
-          <div class="row justify-content-left">
-            <div class="col-md-6">
-              <div class="info">
-                <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
-                  <i class="fa fa-check-double text-info"></i>
-                </div>
-                <h5 class="font-weight-bolder mt-3 texte">Feature 1</h5>
-                <p class="pe-5">Built by developers for developers. Check the foundation and you will find everything
-                  inside our documentation.</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="info">
-                <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
-                  <i class="fa fa-check-double text-info"></i>
-                </div>
-                <h5 class="font-weight-bolder mt-3 texte">Feature 2</h5>
-                <p class="pe-3">The world’s most popular front-end open source toolkit, featuring Sass variables and
-                  mixins.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-left mt-1">
-            <div class="col-md-6 mt-3">
-              <div class="info">
-                <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
-                  <i class="fa fa-check-double text-info"></i>
-                </div>
-                <h5 class="font-weight-bolder mt-3 texte">Feature 3</h5>
-                <p class="pe-5">Creating your design from scratch with dedicated designers can be very expensive. Start
-                  with our Design System.</p>
-              </div>
-            </div>
-            <div class="col-md-6 mt-3">
-              <div class="info">
-                <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
-                  <i class="fa fa-check-double text-info"></i>
-                </div>
-                <h5 class="font-weight-bolder mt-3 texte">Feature 4</h5>
-                <p class="pe-3">Regardless of the screen size, the website content will naturally fit the given
-                  resolution.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-          <div class="card card-background  tilt" data-tilt style="height: 31rem;">
-            <div class="full-background"
-              style="background-image: url('https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80') ">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><div id="blogs123"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-  </section>
-  <!-- END Section with four info areas left & one card right with image and waves -->
+      // Plugin options and our code
+      $("#modal_trigger").leanModal({
+        top: 100,
+        overlay: 0.6,
+        closeButton: ".modal_close"
+      });
+      $(function () {
+        // Calling Login Form
+        $("#login_form").click(function () {
+          $(".social_login").hide();
+          $(".user_login").show();
+          return false;
+        });
 
-  <!------------------------Blogs--------------------------- -->
-  <section class="py-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 mb-5">
-          <div class="icon icon-shape contexte shadow text-center mb-3">
-          <a href="{% static 'HTML/blogs.html' %}"> <i class="fa fa-book-open"></i></a> 
-          </div>
-          <h3 class="texte">Bloges</h3>
-          <p>This is the paragraph where you can write more details about your team. Keep you user engaged by providing
-            meaningful information.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 mb-lg-0 mb-4">
-         <div class="card">
-            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
-              <a href="{% static 'HTML/blogs.html' %}" class="d-block">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-1.jpg"
-                  class="img-fluid border-radius-lg">
-              </a>
-            </div>
+        // Calling Register Form
+        $("#register_form").click(function () {
+          $(".social_login").hide();
+          $(".user_register").show();
+          $(".header_title").text('Register');
+          return false;
+        });
 
-            <div class="card-body pt-3">
-              <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">House</span>
-              <a href="javascript:;" class="card-title h5 d-block text-darker">
-                Shared Coworking
-              </a>
-              <p class="card-description mb-4">
-                Use border utilities to quickly style the border and border-radius of an element. Great for images,
-                buttons.
-              </p>
-              <div class="author align-items-center">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-2.jpg" alt="..."
-                  class="avatar shadow">
-                <div class="name ps-3">
-                  <span>Mathew Glock</span>
-                  <div class="stats">
-                    <small>Posted on 28 February</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-lg-0 mb-4">
-          <div class="card">
-            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
-              <a href="javascript:;" class="d-block">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-1.jpg"
-                  class="img-fluid border-radius-lg">
-              </a>
-            </div>
+        // Going back to Social Forms
+        $(".back_btn").click(function () {
+          $(".user_login").hide();
+          $(".user_register").hide();
+          $(".social_login").show();
+          $(".header_title").text('Login');
+          return false;
+        });
+      });
+      //PASSWORD VALIDATION
 
-            <div class="card-body pt-3">
-              <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">House</span>
-              <a href="javascript:;" class="card-title h5 d-block text-darker">
-                Shared Coworking
-              </a>
-              <p class="card-description mb-4">
-                Use border utilities to quickly style the border and border-radius of an element. Great for images,
-                buttons.
-              </p>
-              <div class="author align-items-center">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-2.jpg" alt="..."
-                  class="avatar shadow">
-                <div class="name ps-3">
-                  <span>Mathew Glock</span>
-                  <div class="stats">
-                    <small>Posted on 28 February</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-lg-0 mb-4">
-          <div class="card">
-            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
-              <a href="javascript:;" class="d-block">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-2.jpg"
-                  class="img-fluid border-radius-lg">
-              </a>
-            </div>
+      function checkPassword() {
+        var pw = document.getElementById("vpasswd").value;
+        var cpw = document.getElementById("cpasswd").value;
+        // window.alert(pw + cpw)
+        if (pw == cpw) {
 
-            <div class="card-body pt-3">
-              <span class="text-gradient text-info text-uppercase text-xs font-weight-bold my-2">Office</span>
-              <a href="javascript:;" class="text-darker card-title h5 d-block">
-                Really Housekeeping
-              </a>
-              <p class="card-description mb-4">
-                Use border utilities to quickly style the border and border-radius of an element. Great for images,
-                buttons.
-              </p>
-              <div class="author align-items-center">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/ivana-square.jpg" alt="..."
-                  class="avatar shadow">
-                <div class="name ps-3">
-                  <span>Chriss Smahos</span>
-                  <div class="stats">
-                    <small>Posted 2 min ago</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-lg-0 mb-4">
-          <div class="card">
-            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
-              <a href="javascript:;" class="d-block">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-3.jpg"
-                  class="img-fluid border-radius-lg">
-              </a>
-            </div>
+          if (pw.length < 8) {
+            //window.alert("HI");
+            document.getElementById("messages").innerHTML = "**Password length must be atleast 8 characters";
+            return false;
+          }
 
-            <div class="card-body pt-3">
-              <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">Hub</span>
-              <a href="javascript:;" class="text-darker card-title h5 d-block">
-                Shared Coworking
-              </a>
-              <p class="card-description mb-4">
-                Use border utilities to quickly style the border and border-radius of an element. Great for images,
-                buttons.
-              </p>
-              <div class="author align-items-center">
-                <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/marie.jpg" alt="..."
-                  class="avatar shadow">
-                <div class="name ps-3">
-                  <span>Elijah Miller</span>
-                  <div class="stats">
-                    <small>Posted now</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><div id="aboutus123"></div>
-    </div>
-  </section>
+          //maximum length of password validation  
+          if (pw.length > 15) {
+            document.getElementById("messages").innerHTML = "**Password length must not exceed 15 characters";
+            return false;
+          }
+          else {
+            return true;
+          }
+        } else {
+          document.getElementById("messages").innerHTML = "**Password Miss Match Try Again";
+          return false;
+        }
+      }
 
 
-  <!---------------------about us ---------------- -->
-  <section class="py-5" id="contexte">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 mb-5">
-          <div class="icon icon-shape contexte shadow text-center mb-3">
-            <i class="fas fa-user"></i>
+            </script>
+            <a href="#" class="forgot_password">Forgot password?</a>
           </div>
-          <h3>Our Awesome Team</h3>
-          <p>This is the paragraph where you can write more details about your team. Keep you user engaged by providing
-            meaningful information.</p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
-          <div class="card card-profile card-plain">
-            <div class="text-start mt-n5 z-index-1">
-              <div class="position-relative w-25">
-                <div class="blur-shadow-avatar">
-                  <img class="avatar avatar-xxl shadow-lg"
-                    src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/bruce-mars.jpg">
-                </div>
+
+          <!-- Register Form -->
+          <div class="user_register">
+            <form onsubmit="return checkPassword()" name="signup" method="post" action="signup">
+              {% csrf_token %}
+              <label style="color:red" id="messages"></label>
+              <label>UserName</label>
+              <input required name="suname" type="text" class="form-control" />
+              <br />
+
+              <label>Email Address</label>
+              <input required name="email" type="email" class="form-control" />
+              <br />
+
+              <label>Password</label>
+              <input required id="vpasswd" name="passwd" type="password" class="form-control" />
+              <br />
+
+              <label>Confirm Password</label>
+              <input required id="cpasswd" name="cpasswd" type="password" class="form-control" />
+              <br />
+
+              <div class="checkbox">
+                <input id="send_updates" type="checkbox" />
+                <label for="send_updates">Send me occasional email updates</label>
               </div>
-            </div>
-            <div class="card-body ps-0">
-              <h5 class="mb-0">Alec Thompson</h5>
-              <p class="text-muted">CEO / Co-Founder</p>
-              <p>
-                And I love you like Kanye loves Kanye. We need to restart the human foundation.
-              </p>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-twitter" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
-              </button>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-dribbble" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-dribbble"></i></span>
-              </button>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-linkedin" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-linkedin"></i></span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
-          <div class="card card-profile card-plain">
-            <div class="mt-n5 z-index-1">
-              <div class="position-relative w-25">
-                <div class="blur-shadow-avatar">
-                  <img class="avatar avatar-xxl shadow-lg"
-                    src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-3.jpg">
+
+              <div class="action_btns">
+                <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a>
                 </div>
+                <div class="one_half last"><input type="submit" class="btn btn_red" value="Register"></div>
               </div>
-            </div>
-            <div class="card-body ps-0">
-              <h5 class="mb-0">Alec Thompson</h5>
-              <p class="text-muted">CEO / Co-Founder</p>
-              <p>
-                And I love you like Kanye loves Kanye. We need to restart the human foundation.
-              </p>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-twitter" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
-              </button>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-dribbble" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-dribbble"></i></span>
-              </button>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-linkedin" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-linkedin"></i></span>
-              </button>
-            </div>
+            </form>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mx-md-auto mt-md-0 mt-5">
-          <div class="card card-profile card-plain">
-            <div class="mt-n5 z-index-1">
-              <div class="position-relative w-25">
-                <div class="blur-shadow-avatar">
-                  <img class="avatar avatar-xxl shadow-lg"
-                    src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-4.jpg">
-                </div>
-              </div>
-            </div>
-            <div class="card-body ps-0">
-              <h5 class="mb-0">Alec Thompson</h5>
-              <p class="text-muted">CEO / Co-Founder</p>
-              <p>
-                And I love you like Kanye loves Kanye. We need to restart the human foundation.
-              </p>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-twitter" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
-              </button>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-dribbble" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-dribbble"></i></span>
-              </button>
-              <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-linkedin" data-toggle="tooltip"
-                data-placement="bottom" title="Follow me!">
-                <span class="btn-inner--icon"><i class="fab fa-linkedin"></i></span>
-              </button>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
-  </section>
-  <div id="contactus123"></div>
-  <!-----------------------contact us -------------- -->
-  <section class="py-7">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="card overflow-hidden">
-            <div class="row">
-              <div class="col-lg-7">
-                <form class="p-3" id="contact-form" method="post">
-                  <div class="card-header px-4 py-sm-5 py-3">
-                    <h2>Say Hi!</h2>
-                    <p class="lead"> We&#39;d like to talk with you.</p>
+    <script>
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <!-- -------- END HEADER 5 w/ text and illustration ------- -->
+    <div id="services123"></div>
+    <!------------------------services------------------------------>
+    <section class="my-5 py-5" id="contexte">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <div class="icon icon-shape contexte shadow text-center mb-3">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+            <h3 class="texte">Our Service</h3>
+            <p>This is the paragraph where you can write more details about your team. Keep you user engaged by
+              providing
+              meaningful information.</p>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="col-lg-6 mx-0">
+            <div class="row justify-content-left">
+              <div class="col-md-6">
+                <div class="info">
+                  <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
+                    <i class="fa fa-check-double text-info"></i>
                   </div>
-                  <div class="card-body pt-1">
-                    <div class="row">
-                      <div class="col-md-12 pe-2 mb-3">
-                        <label>My name is</label>
-                        <input class="form-control" placeholder="Full Name" type="text">
+                  <h5 class="font-weight-bolder mt-3 texte">Feature 1</h5>
+                  <p class="pe-5">Built by developers for developers. Check the foundation and you will find everything
+                    inside our documentation.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
+                    <i class="fa fa-check-double text-info"></i>
+                  </div>
+                  <h5 class="font-weight-bolder mt-3 texte">Feature 2</h5>
+                  <p class="pe-3">The world’s most popular front-end open source toolkit, featuring Sass variables and
+                    mixins.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-left mt-1">
+              <div class="col-md-6 mt-3">
+                <div class="info">
+                  <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
+                    <i class="fa fa-check-double text-info"></i>
+                  </div>
+                  <h5 class="font-weight-bolder mt-3 texte">Feature 3</h5>
+                  <p class="pe-5">Creating your design from scratch with dedicated designers can be very expensive.
+                    Start
+                    with our Design System.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="info">
+                  <div class="border-radius-md icon-shape-sm icon-sm bg-white  text-center ">
+                    <i class="fa fa-check-double text-info"></i>
+                  </div>
+                  <h5 class="font-weight-bolder mt-3 texte">Feature 4</h5>
+                  <p class="pe-3">Regardless of the screen size, the website content will naturally fit the given
+                    resolution.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="card card-background  tilt" data-tilt style="height: 31rem;">
+              <div class="full-background"
+                style="background-image: url('https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80') ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="blogs123"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    </section>
+    <!-- END Section with four info areas left & one card right with image and waves -->
+
+    <!------------------------Blogs--------------------------- -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <div class="icon icon-shape contexte shadow text-center mb-3">
+              <a href="{% static 'HTML/blogs.html' %}"> <i class="fa fa-book-open"></i></a>
+            </div>
+            <h3 class="texte">Bloges</h3>
+            <p>This is the paragraph where you can write more details about your team. Keep you user engaged by
+              providing
+              meaningful information.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 mb-lg-0 mb-4">
+            <div class="card">
+              <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                <a href="{% static 'HTML/blogs.html' %}" class="d-block">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-1.jpg"
+                    class="img-fluid border-radius-lg">
+                </a>
+              </div>
+
+              <div class="card-body pt-3">
+                <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">House</span>
+                <a href="javascript:;" class="card-title h5 d-block text-darker">
+                  Shared Coworking
+                </a>
+                <p class="card-description mb-4">
+                  Use border utilities to quickly style the border and border-radius of an element. Great for images,
+                  buttons.
+                </p>
+                <div class="author align-items-center">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-2.jpg" alt="..."
+                    class="avatar shadow">
+                  <div class="name ps-3">
+                    <span>Mathew Glock</span>
+                    <div class="stats">
+                      <small>Posted on 28 February</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-lg-0 mb-4">
+            <div class="card">
+              <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                <a href="javascript:;" class="d-block">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-1.jpg"
+                    class="img-fluid border-radius-lg">
+                </a>
+              </div>
+
+              <div class="card-body pt-3">
+                <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">House</span>
+                <a href="javascript:;" class="card-title h5 d-block text-darker">
+                  Shared Coworking
+                </a>
+                <p class="card-description mb-4">
+                  Use border utilities to quickly style the border and border-radius of an element. Great for images,
+                  buttons.
+                </p>
+                <div class="author align-items-center">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-2.jpg" alt="..."
+                    class="avatar shadow">
+                  <div class="name ps-3">
+                    <span>Mathew Glock</span>
+                    <div class="stats">
+                      <small>Posted on 28 February</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-lg-0 mb-4">
+            <div class="card">
+              <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                <a href="javascript:;" class="d-block">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-2.jpg"
+                    class="img-fluid border-radius-lg">
+                </a>
+              </div>
+
+              <div class="card-body pt-3">
+                <span class="text-gradient text-info text-uppercase text-xs font-weight-bold my-2">Office</span>
+                <a href="javascript:;" class="text-darker card-title h5 d-block">
+                  Really Housekeeping
+                </a>
+                <p class="card-description mb-4">
+                  Use border utilities to quickly style the border and border-radius of an element. Great for images,
+                  buttons.
+                </p>
+                <div class="author align-items-center">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/ivana-square.jpg" alt="..."
+                    class="avatar shadow">
+                  <div class="name ps-3">
+                    <span>Chriss Smahos</span>
+                    <div class="stats">
+                      <small>Posted 2 min ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-lg-0 mb-4">
+            <div class="card">
+              <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                <a href="javascript:;" class="d-block">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/blog7-3.jpg"
+                    class="img-fluid border-radius-lg">
+                </a>
+              </div>
+
+              <div class="card-body pt-3">
+                <span class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">Hub</span>
+                <a href="javascript:;" class="text-darker card-title h5 d-block">
+                  Shared Coworking
+                </a>
+                <p class="card-description mb-4">
+                  Use border utilities to quickly style the border and border-radius of an element. Great for images,
+                  buttons.
+                </p>
+                <div class="author align-items-center">
+                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/marie.jpg" alt="..."
+                    class="avatar shadow">
+                  <div class="name ps-3">
+                    <span>Elijah Miller</span>
+                    <div class="stats">
+                      <small>Posted now</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="aboutus123"></div>
+      </div>
+    </section>
+
+
+    <!---------------------about us ---------------- -->
+    <section class="py-5" id="contexte">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <div class="icon icon-shape contexte shadow text-center mb-3">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3>Our Awesome Team</h3>
+            <p>This is the paragraph where you can write more details about your team. Keep you user engaged by
+              providing
+              meaningful information.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+            <div class="card card-profile card-plain">
+              <div class="text-start mt-n5 z-index-1">
+                <div class="position-relative w-25">
+                  <div class="blur-shadow-avatar">
+                    <img class="avatar avatar-xxl shadow-lg"
+                      src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/bruce-mars.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body ps-0">
+                <h5 class="mb-0">Alec Thompson</h5>
+                <p class="text-muted">CEO / Co-Founder</p>
+                <p>
+                  And I love you like Kanye loves Kanye. We need to restart the human foundation.
+                </p>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-twitter" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
+                </button>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-dribbble" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-dribbble"></i></span>
+                </button>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-linkedin" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-linkedin"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+            <div class="card card-profile card-plain">
+              <div class="mt-n5 z-index-1">
+                <div class="position-relative w-25">
+                  <div class="blur-shadow-avatar">
+                    <img class="avatar avatar-xxl shadow-lg"
+                      src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-3.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body ps-0">
+                <h5 class="mb-0">Alec Thompson</h5>
+                <p class="text-muted">CEO / Co-Founder</p>
+                <p>
+                  And I love you like Kanye loves Kanye. We need to restart the human foundation.
+                </p>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-twitter" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
+                </button>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-dribbble" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-dribbble"></i></span>
+                </button>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-linkedin" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-linkedin"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mx-md-auto mt-md-0 mt-5">
+            <div class="card card-profile card-plain">
+              <div class="mt-n5 z-index-1">
+                <div class="position-relative w-25">
+                  <div class="blur-shadow-avatar">
+                    <img class="avatar avatar-xxl shadow-lg"
+                      src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-pro/img/team-4.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body ps-0">
+                <h5 class="mb-0">Alec Thompson</h5>
+                <p class="text-muted">CEO / Co-Founder</p>
+                <p>
+                  And I love you like Kanye loves Kanye. We need to restart the human foundation.
+                </p>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-twitter" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
+                </button>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-dribbble" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-dribbble"></i></span>
+                </button>
+                <button type="button" class="btn-icon-only btn-simple btn btn-lg btn-linkedin" data-toggle="tooltip"
+                  data-placement="bottom" title="Follow me!">
+                  <span class="btn-inner--icon"><i class="fab fa-linkedin"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="contactus123"></div>
+    <!-----------------------contact us -------------- -->
+    <section class="py-7">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card overflow-hidden">
+              <div class="row">
+                <div class="col-lg-7">
+                  <form class="p-3" id="contact-form" method="post">
+                    <div class="card-header px-4 py-sm-5 py-3">
+                      <h2>Say Hi!</h2>
+                      <p class="lead"> We&#39;d like to talk with you.</p>
+                    </div>
+                    <div class="card-body pt-1">
+                      <div class="row">
+                        <div class="col-md-12 pe-2 mb-3">
+                          <label>My name is</label>
+                          <input class="form-control" placeholder="Full Name" type="text">
+                        </div>
+
+                        <div class="col-md-12 pe-2 mb-3">
+                          <label>I&#39;m looking for</label>
+                          <input class="form-control" placeholder="What you love" type="text">
+                        </div>
+
+                        <div class="col-md-12 pe-2 mb-3">
+                          <div class="form-group mb-0">
+                            <label>Your message</label>
+                            <textarea name="message" class="form-control" id="message" rows="6"
+                              placeholder="I want to say that..."></textarea>
+                          </div>
+                        </div>
                       </div>
 
-                      <div class="col-md-12 pe-2 mb-3">
-                        <label>I&#39;m looking for</label>
-                        <input class="form-control" placeholder="What you love" type="text">
-                      </div>
-
-                      <div class="col-md-12 pe-2 mb-3">
-                        <div class="form-group mb-0">
-                          <label>Your message</label>
-                          <textarea name="message" class="form-control" id="message" rows="6"
-                            placeholder="I want to say that..."></textarea>
+                      <div class="row">
+                        <div class="col-md-6 text-end ms-auto">
+                          <button type="submit" class="btn  border-radius-md contexte mb-0">submit</button>
                         </div>
                       </div>
                     </div>
+                  </form>
+                </div>
+                <div class="col-lg-5 position-relative bg-cover px-0"
+                  style="background-image: url('https://appsrv1-147a1.kxcdn.com/soft-ui-design-v1.0.1/img/curved-images/curved5.jpg')">
+                  <div class="position-absolute z-index-2 w-100 h-100 top-0 start-0 d-lg-block d-none">
+                    <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-v1.0.1/img/wave-1.svg" class="h-100 ms-n2">
+                  </div>
+                  <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+                    <div class="mask bg-gradient-info opacity-9"></div>
+                    <div class="p-5 ps-sm-8 position-relative text-left my-auto z-index-2">
+                      <h3 class="text-white">Contact Information</h3>
+                      <p class="text-white opacity-8 mb-4">Fill up the form and our Team will get back to you within 24
+                        hours.</p>
+                      <div class="d-flex p-2 text-white">
+                        <div>
+                          <i class="fas fa-phone text-sm" aria-hidden="true"></i>
+                        </div>
+                        <div class="ps-3">
+                          <span class="text-sm opacity-8">+91 97785 71050</span>
+                        </div>
+                      </div>
+                      <div class="d-flex p-2 text-white">
+                        <div>
+                          <i class="fas fa-envelope text-sm" aria-hidden="true"></i>
+                        </div>
+                        <div class="ps-3">
+                          <span class="text-sm opacity-8">support@laroute.in</span>
+                        </div>
+                      </div>
+                      <div class="d-flex p-2 text-white">
+                        <div>
+                          <i class="fas fa-map-marker-alt text-sm" aria-hidden="true"></i>
+                        </div>
+                        <div class="ps-3">
+                          <span class="text-sm opacity-8">HiLITE Business Park, Calicut, Kerala, India 673014</span>
+                        </div>
+                      </div>
+                      <div class="mt-4">
+                        <a href="https://www.facebook.com/laroutetherodetoexplore"><button type="button"
+                            class="btn btn-icon-only btn-link text-white btn-lg mb-0">
+                            <i class="fab fa-facebook"></i>
+                          </button></a>
+                        <a href="https://www.twitter.com/LaROUTE__"><button type="button"
+                            class="btn btn-icon-only btn-link text-white btn-lg mb-0">
+                            <i class="fab fa-twitter"></i>
+                          </button></a>
+                        <a href="https://www.reddit.com/user/LaROUTE__"><button type="button"
+                            class="btn btn-icon-only btn-link text-white btn-lg mb-0">
+                            <i class="fab fa-reddit"></i>
+                          </button></a>
+                        <a href="http://instagram.com/la_route__/"><button type="button"
+                            class="btn btn-icon-only btn-link text-white btn-lg mb-0">
+                            <i class="fab fa-instagram"></i>
+                          </button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                    <div class="row">
-                      <div class="col-md-6 text-end ms-auto">
-                        <button type="submit" class="btn  border-radius-md contexte mb-0">submit</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
               </div>
-              <div class="col-lg-5 position-relative bg-cover px-0" style="background-image: url('https://appsrv1-147a1.kxcdn.com/soft-ui-design-v1.0.1/img/curved-images/curved5.jpg')">
-                <div class="position-absolute z-index-2 w-100 h-100 top-0 start-0 d-lg-block d-none">
-                  <img src="https://appsrv1-147a1.kxcdn.com/soft-ui-design-v1.0.1/img/wave-1.svg" class="h-100 ms-n2">
-                </div>
-                <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
-                  <div class="mask bg-gradient-info opacity-9"></div>
-                  <div class="p-5 ps-sm-8 position-relative text-left my-auto z-index-2">
-                    <h3 class="text-white">Contact Information</h3>
-                    <p class="text-white opacity-8 mb-4">Fill up the form and our Team will get back to you within 24 hours.</p>
-                    <div class="d-flex p-2 text-white">
-                      <div>
-                        <i class="fas fa-phone text-sm" aria-hidden="true"></i>
-                      </div>
-                      <div class="ps-3">
-                        <span class="text-sm opacity-8">+91 97785 71050</span>
-                      </div>
-                    </div>
-                    <div class="d-flex p-2 text-white">
-                      <div>
-                        <i class="fas fa-envelope text-sm" aria-hidden="true"></i>
-                      </div>
-                      <div class="ps-3">
-                        <span class="text-sm opacity-8">support@laroute.in</span>
-                      </div>
-                    </div>
-                    <div class="d-flex p-2 text-white">
-                      <div>
-                        <i class="fas fa-map-marker-alt text-sm" aria-hidden="true"></i>
-                      </div>
-                      <div class="ps-3">
-                        <span class="text-sm opacity-8">HiLITE Business Park, Calicut, Kerala, India 673014</span>
-                      </div>
-                    </div>
-                    <div class="mt-4">
-                     <a href="https://www.facebook.com/laroutetherodetoexplore"><button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" >
-                        <i class="fab fa-facebook" ></i>
-                      </button></a> 
-                      <a href="https://www.twitter.com/LaROUTE__"><button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" >
-                        <i class="fab fa-twitter" ></i>
-                      </button></a>
-                      <a href="https://www.reddit.com/user/LaROUTE__"><button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" >
-                        <i class="fab fa-reddit"></i>
-                      </button></a>
-                      <a href="http://instagram.com/la_route__/"><button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" >
-                        <i class="fab fa-instagram" ></i>
-                      </button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
             </div>
           </div>
         </div>
-      </div>
-  </section>
+    </section>
 </body>
 
 </html>

@@ -28,9 +28,9 @@ def login(request):
 
 def signup(request):
     if request.method == 'POST' :
-        uname=request.POST['uname']
+        uname=request.POST['suname']
         email=request.POST['email']
-        pass1=request.POST['passwd']
+        pass1=request.POST['spasswd']
         #pass2=request.POST['pass2']
         if User.objects.filter(username=uname).exists():
             messages.info(request, 'Username Taken')
