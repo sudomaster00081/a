@@ -41,7 +41,7 @@ def signup(request):
         else :
             user = User.objects.create_user(username=uname, password=pass1, email=email)
             user.save();
-            messages.info(request, 'Welcome On Board')
+            messages.info(request, 'Welcome On Board' )
             auth.login(request, user)
             return redirect('dashboard')
   
