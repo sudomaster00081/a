@@ -5,12 +5,13 @@
 
 
 
-<div align="center">
+<div bgcolor="red" align="center">
+   
     <h1><u><i>DashBoard</i></u></h1>
     {% if user.is_authenticated %}
     Hey {{user.username}}
     {% endif %}
-    <div>
+    <div class="mydiv">     
         {%for message in messages %}
         <h3>{{message}}</h3>
         {% endfor %}
