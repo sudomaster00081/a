@@ -31,6 +31,7 @@ def signup(request):
         uname=request.POST['suname']
         email=request.POST['email']
         pass1=request.POST['spasswd']
+        #fname = request.PST['fname']
         #pass2=request.POST['pass2']
         if User.objects.filter(username=uname).exists():
             messages.info(request, 'Username Taken')
@@ -39,7 +40,7 @@ def signup(request):
             messages.info(request,'Email Taken')
             return redirect('signup')
         else :
-            user = User.objects.create_user(username=uname, password=pass1, email=email)
+            user = User.objects.create_user( username=uname, password=pass1, email=email)
             user.save();
             messages.info(request, 'Welcome On Board' )
             auth.login(request, user)

@@ -173,7 +173,9 @@
                       required : true,
                       minlength : 8
                     },
-                    
+                    messages : {
+                      uname : "Enter Username"
+                    }
               
                   },
                   submitHandler : function verifyLogin() {
@@ -293,16 +295,72 @@
         }
       }
 
+$(document).ready(function (){
+  $("#signup").validate({
+    rules : {
+      suname : {
+        required : true,
+        minlength : 6
+      },
+      cpasswd : {
+        required : true,
+        minlength : 8,
+        maxlength : 16
+      },
 
-            </script>
+      email : {
+        required : true,
+        email : true
+      },
+
+      vpasswd : {
+          required : true,
+          minlength : 8,
+          maxlength : 16
+      },
+    submitHandler :function checkPasswordMatch() {
+      var password = $("#cpasswd").val();
+      var confirmPassword = $("#vpasswd").val();
+      var pw = document.getElementById("cpasswd").value;
+      var cpw = document.getElementById("vpasswd").value;
+      //$(document).ready(function () {
+      //  $("#vpasswd").keyup(checkPasswordMatch);
+      //});
+      if (pw != cpw){
+          window.alert("hi");
+          $("#CheckPasswordMatch").html("Passwords does not match!");
+          return false;
+      }
+          //document.getElementById("CheckPasswordMatch").innerHTML = "***Password Doesnot Match";
+      else
+          $("#CheckPasswordMatch").html("Passwords match.");
+  }
+  
+    }
+  })
+
+})
+
+$(document).ready(function () {
+  $("#txtConfirmPassword").keyup(checkPasswordMatch);
+});
+
+
+
+
+
+</script>
             <a href="#" class="forgot_password">Forgot password?</a>
           </div>
 
           <!-- Register Form -->
           <div class="user_register">
-            <form onsubmit="return checkPassword()" name="signup" method="post" action="signup">
+            <form id="signup"  name="signup" method="post" action="signup">
               {% csrf_token %}
               <label style="color:red" id="messages"></label>
+              <!--<label>Full Name</label>
+              <input required name="fname" type="text" class="form-control" />
+              <br />-->
               <label>UserName</label>
               <input required name="suname" type="text" class="form-control" />
               <br />
@@ -317,6 +375,7 @@
 
               <label>Confirm Password</label>
               <input required id="cpasswd" name="cpasswd" type="password" class="form-control" />
+              <label id="CheckPasswordMatch"></label>
               <br />
 
               <div class="checkbox">
