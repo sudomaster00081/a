@@ -12,6 +12,11 @@ pip install django
 
 django-admin --version 
 
+#creating super user
+python manage.py createsuperuser
+
+
+
 mkdir la1  
 
 cd la1
