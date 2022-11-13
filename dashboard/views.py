@@ -9,8 +9,8 @@ def home(request):
     return render(request, 'Dashboardbase.html')
 
 def companion(request):
-    return redirect(dashboard)
-    #return render(request, 'companion.html')
+    #return redirect(dashboard)
+    return render(request, 'companion.html')
 
 def plantrip(request):
     return render(request, 'plantrip.html')
