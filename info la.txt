@@ -78,6 +78,9 @@ STATICFILES_DIRS = [
 
 
 #HEROKU
+
+pip install heroku 
+
 # create Procfile
 web: gunicorn laroute0001.wsgi
 
@@ -97,7 +100,7 @@ git init
 
 git add .
 
-git commit -m "First Commit"
+git commit -m "First Commit on live server"
 
 
 heroku login
