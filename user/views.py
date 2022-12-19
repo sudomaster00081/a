@@ -6,7 +6,7 @@ from django.contrib.auth.models import User, auth
 
 
 def home(request):
-    return render(request, 'Homepage.html')
+    return render(request, 'homepage\Homepage.html')
 
 
 def login(request):
@@ -17,11 +17,11 @@ def login(request):
         if user is not None :
             auth.login(request, user)
             messages.info(request, 'Login Successfull')
-            #return render(request, 'Dashboard.html',{ 'result' : uname})
+            #return render(request, 'dashboard\Dashboard.html',{ 'result' : uname})
             return redirect('dashboard')#, { 'result' : uname})
         else :
             messages.info(request, 'Invalid Credentials')
-            return render(request , 'Homepage.html')   
+            return render(request , 'homepage\Homepage.html')   
     else :
          return redirect('dashboard')
 
@@ -35,7 +35,7 @@ def signup(request):
         #pass2=request.POST['pass2']
         if User.objects.filter(username=uname).exists():
             messages.info(request, 'Username Taken')
-            return render(request, 'Homepage.html')
+            return render(request, 'homepage\Homepage.html')
         elif User.objects.filter(email=email).exists():
             messages.info(request,'Email Taken')
             return redirect('signup')
@@ -47,8 +47,8 @@ def signup(request):
             return redirect('dashboard')
   
     else:
-        return render(request, 'Homepage.html')
-    return render(request, 'Homepage.html')
+        return render(request, 'homepage\Homepage.html')
+    return render(request, 'homepage\Homepage.html')
 
 
 def dashboard(request):
@@ -56,7 +56,7 @@ def dashboard(request):
         print("helloworld")
     
     else:
-        return render(request, 'Dashboard.html')
+        return render(request, 'dashboard\Dashboard.html')
 
 
 def logout(request):
@@ -71,7 +71,7 @@ def ajlogin(request):
         if user is not None :
             auth.login(request, user)
             messages.info(request, 'Login Successfull')
-            #return render(request, 'Dashboard.html',{ 'result' : uname})
+            #return render(request, 'dashboard\Dashboard.html',{ 'result' : uname})
             return JsonResponse(
                 {'success' : True},
                 safe = False
@@ -83,5 +83,5 @@ def ajlogin(request):
                 safe = False
             )  
     else :
-         return render(request, 'Dashboard.html')
+         return render(request, 'dashboard\Dashboard.html')
 
